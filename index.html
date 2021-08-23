@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <script type="text/javascript" src="particles.js"></script>
+    <title>Yorusoft</title>
+  </head>
+  <body class="bg-background">
+    <div id="particles-js"></div>
+    <div class="flex justify-center items-center   h-screen">
+      <div class="flex flex-col items-center">
+        <div class="flex items-center gap-x-4 border-secondary border-b pb-3 select-none">
+            <img class="w-16 md:w-20" src="/dist/svgs/logo.svg" alt="logo" />
+            <h1 class="text-4xl md:text-5xl font-bold animate-bounce">
+              <span class="text-primary">Yoru</span
+              ><span class="text-secondary">soft</span>
+            </h1>
+          </div>
+
+          <div class="flex flex-col text-center items-center gap-y-2 mt-4  text-secondary text-lg md:text-xl md:flex-row md:gap-x-4">
+            <h2 class="flex md:border-secondary md:border-r md:pr-3"><span><img class="w-8 mr-2" src="/dist/svgs/mail.svg" alt="mail"></span><a class="hover:underline" href="mailto:yorusoft@gmail.com">yorusoft@gmail.com</a></h2>
+            <h2 class="flex"> <span><img class="w-8 mr-2" src="/dist/svgs/whatsapp.svg" alt="whatsapp"></span><a  class="hover:underline" href="tel:+90 538 093 44 04">+90 (538) 093 44 04</a></h2>
+          </div>
+      </div>
+
+    </div>
+
+    <script type="text/javascript">
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 50,
+            density: {
+              enable: true,
+              value_area: 800,
+            },
+          },
+          color: {
+            value: "#5668D1",
+          },
+          shape: {
+            type: "circle",
+            stroke: {
+              width: 0,
+              color: "#000000",
+            },
+            polygon: {
+              nb_sides: 5,
+            },
+            image: {
+              src: "img/github.svg",
+              width: 100,
+              height: 100,
+            },
+          },
+          opacity: {
+            value: 0.5,
+            random: false,
+            anim: {
+              enable: false,
+              speed: 1,
+              opacity_min: 0.1,
+              sync: false,
+            },
+          },
+          size: {
+            value: 3,
+            random: true,
+            anim: {
+              enable: false,
+              speed: 40,
+              size_min: 0.1,
+              sync: false,
+            },
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#5668D1",
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 3,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+              enable: false,
+              rotateX: 600,
+              rotateY: 1200,
+            },
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: true,
+              mode: "grab",
+            },
+            onclick: {
+              enable: false,
+              mode: "push",
+            },
+            resize: true,
+          },
+          modes: {
+            grab: {
+              distance: 140,
+              line_linked: {
+                opacity: 1,
+              },
+            },
+            bubble: {
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 3,
+            },
+            repulse: {
+              distance: 200,
+              duration: 0.4,
+            },
+            push: {
+              particles_nb: 4,
+            },
+            remove: {
+              particles_nb: 2,
+            },
+          },
+        },
+        retina_detect: true,
+      });
+    </script>
+  </body>
+</html>
